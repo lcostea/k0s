@@ -1,18 +1,27 @@
-## k0s token create
+## k0s kubeconfig admin
 
-Create join token
+Manage user access
+
+### Synopsis
+
+Command dumps admin kubeconfig.
 
 ```
-k0s token create [flags]
+k0s kubeconfig admin [command] [flags]
+```
+
+### Examples
+
+```
+	$ k0s kubeconfig admin > kubeconfig
+	$ export KUBECONFIG=kubeconfig
+	$ kubectl get nodes
 ```
 
 ### Options
 
 ```
-      --expiry string   set duration time for token (default "0")
-  -h, --help            help for create
-      --role string     Either worker or controller (default "worker")
-      --wait            wait forever (default false)
+  -h, --help   help for admin
 ```
 
 ### Options inherited from parent commands
@@ -26,5 +35,5 @@ k0s token create [flags]
 
 ### SEE ALSO
 
-* [k0s token](k0s_token.md)	 - Manage join tokens
+* [k0s kubeconfig](k0s_kubeconfig.md)	 - Manage user access
 

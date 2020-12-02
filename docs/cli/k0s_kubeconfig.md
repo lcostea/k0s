@@ -1,18 +1,15 @@
-## k0s token create
+## k0s kubeconfig
 
-Create join token
+Manage user access
 
 ```
-k0s token create [flags]
+k0s kubeconfig [command] [flags]
 ```
 
 ### Options
 
 ```
-      --expiry string   set duration time for token (default "0")
-  -h, --help            help for create
-      --role string     Either worker or controller (default "worker")
-      --wait            wait forever (default false)
+  -h, --help   help for kubeconfig
 ```
 
 ### Options inherited from parent commands
@@ -26,5 +23,7 @@ k0s token create [flags]
 
 ### SEE ALSO
 
-* [k0s token](k0s_token.md)	 - Manage join tokens
+* [k0s](k0s.md)	 - k0s - Zero Friction Kubernetes
+* [k0s kubeconfig admin](k0s_kubeconfig_admin.md)	 - Manage user access
+* [k0s kubeconfig create](k0s_kubeconfig_create.md)	 - Create a kubeconfig for a user
 

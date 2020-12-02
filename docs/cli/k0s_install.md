@@ -1,18 +1,16 @@
-## k0s token create
+## k0s install
 
-Create join token
+Helper command for setting up k0s on a brand-new system. Must be run as root (or with sudo)
 
 ```
-k0s token create [flags]
+k0s install [flags]
 ```
 
 ### Options
 
 ```
-      --expiry string   set duration time for token (default "0")
-  -h, --help            help for create
-      --role string     Either worker or controller (default "worker")
-      --wait            wait forever (default false)
+  -h, --help          help for install
+      --role string   node role (possible values: server or worker. In a single-node setup, a worker role should be used) (default "server")
 ```
 
 ### Options inherited from parent commands
@@ -26,5 +24,5 @@ k0s token create [flags]
 
 ### SEE ALSO
 
-* [k0s token](k0s_token.md)	 - Manage join tokens
+* [k0s](k0s.md)	 - k0s - Zero Friction Kubernetes
 
